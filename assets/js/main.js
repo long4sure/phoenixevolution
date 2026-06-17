@@ -1,5 +1,5 @@
 /* ============================================
-   Phoenix Evolution - script.js
+   Phoenix Evolution - main.js
    ============================================ */
 
 // ---- Navbar scroll behavior ----
