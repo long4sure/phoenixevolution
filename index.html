@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phoenix Evolution | Cross Channel Communication</title>
+  <link rel="icon" href="phoenixicon.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img src="phoenixlogo.png" alt="Phoenix Evolution" class="logo-img" />
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li class="has-dropdown">
+          <a href="webpages/products.html">Products <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="webpages/products.html#powered-chatbots"><i class="fas fa-robot"></i> AI Powered Chatbots</a>
+            <a href="webpages/products.html#data-orchestration"><i class="fas fa-database"></i> Data Orchestration</a>
+            <a href="webpages/products.html#cross-channel-messaging"><i class="fas fa-comments"></i> Cross Channel Messaging</a>
+            <a href="webpages/products.html#customer-journey-tracker"><i class="fas fa-route"></i> Customer Journey Tracker</a>
+            <a href="webpages/products.html#conversational-ivr"><i class="fas fa-phone-volume"></i> Conversational IVR</a>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <a href="webpages/sectors.html">Sectors <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="webpages/sectors.html#banking"><i class="fas fa-building-columns"></i> Banking</a>
+            <a href="webpages/sectors.html#retail"><i class="fas fa-store"></i> Retail</a>
+            <a href="webpages/sectors.html#logistics"><i class="fas fa-truck"></i> Logistics</a>
+            <a href="webpages/sectors.html#healthcare"><i class="fas fa-heart-pulse"></i> Healthcare</a>
+            <a href="webpages/sectors.html#event-management"><i class="fas fa-calendar-check"></i> Event Management</a>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <a href="webpages/solutions.html">Solutions <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="webpages/digital-marketing-services.html"><i class="fas fa-bullhorn"></i> Digital Marketing Services</a>
+            <a href="webpages/solutions.html#self-service"><i class="fas fa-user-gear"></i> Self-Service</a>
+            <a href="webpages/solutions.html#consent-management"><i class="fas fa-shield-halved"></i> Consent Management</a>
+            <a href="webpages/solutions.html#fraud-management"><i class="fas fa-lock"></i> Fraud Management</a>
+          </div>
+        </li>
+        <li class="has-dropdown">
+          <a href="webpages/company.html">Company <i class="fas fa-chevron-down"></i></a>
+          <div class="dropdown">
+            <a href="https://thehub.phoenixevolution.ae/MEnable/Client/servlets/Login?b=1046527" target="_blank" rel="noopener noreferrer"><i class="fas fa-right-to-bracket"></i> Login</a>
+            <a href="webpages/privacy-policy.html"><i class="fas fa-file-shield"></i> Privacy Policy</a>
+          </div>
+        </li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary">Request a Demo</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content" data-animate="fade-up">
+        <div class="hero-badge"><i class="fas fa-bolt"></i> AI-Powered Platform</div>
+        <h1>
+          <span class="highlight">Engage</span> and
+          <span class="highlight">Empower</span><br />
+          your customers<br />
+          in <span class="highlight">Realtime</span>
+        </h1>
+        <p class="hero-sub">
+          Visualize and build intelligent, automated and relevant customer journeys
+          across every channel — seamlessly.
+        </p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary btn-lg">
+            <i class="fas fa-comments"></i> Talk to an Expert
+          </a>
+          <a href="#video" class="btn btn-outline btn-lg">
+            <i class="fas fa-play-circle"></i> See it in Action
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><strong>500+</strong><span>Brands Served</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>10M+</strong><span>Messages/Day</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><strong>99.9%</strong><span>Uptime SLA</span></div>
+        </div>
+      </div>
+      <div class="hero-visual" data-animate="fade-left">
+        <div class="hero-card card-float">
+          <div class="card-icon"><i class="fas fa-robot"></i></div>
+          <div class="card-info">
+            <strong>AI Chatbot Active</strong>
+            <span>3,421 conversations today</span>
+          </div>
+          <div class="card-badge green">Live</div>
+        </div>
+        <div class="hero-card card-float-2">
+          <div class="card-icon orange"><i class="fas fa-chart-line"></i></div>
+          <div class="card-info">
+            <strong>Engagement Rate</strong>
+            <span>↑ 42% this month</span>
+          </div>
+        </div>
+        <div class="hero-dashboard">
+          <div class="dash-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green2"></span>
+            <span class="dash-title">Customer Journey</span>
+          </div>
+          <div class="dash-channels">
+            <div class="channel active"><i class="fas fa-comment-sms"></i> SMS</div>
+            <div class="channel"><i class="fab fa-whatsapp"></i> WhatsApp</div>
+            <div class="channel"><i class="fas fa-envelope"></i> Email</div>
+            <div class="channel"><i class="fas fa-phone"></i> IVR</div>
+          </div>
+          <div class="dash-flow">
+            <div class="flow-step done"><i class="fas fa-check-circle"></i> Trigger</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step done"><i class="fas fa-check-circle"></i> Segment</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step active"><i class="fas fa-spinner fa-spin"></i> Send</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><i class="fas fa-circle"></i> Analyze</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#clients"><i class="fas fa-chevron-down"></i></a>
+    </div>
+  </section>
+
+  <!-- ========== CLIENTS ========== -->
+  <section class="clients" id="clients">
+    <div class="container">
+      <div class="section-label">Trusted by leading brands</div>
+      <div class="clients-track-wrapper">
+        <div class="clients-track" id="clientsTrack">
+          <div class="client-logo"><img src="images/acer.jpg" alt="Acer" /></div>
+          <div class="client-logo"><img src="images/altayermotors.jpg" alt="Al Tayer Motors" /></div>
+          <div class="client-logo"><img src="images/careem.jpg" alt="Careem" /></div>
+          <div class="client-logo"><img src="images/chalhoub-group.jpg" alt="Chalhoub Group" /></div>
+          <div class="client-logo"><img src="images/dmg-events.jpg" alt="DMG Events" /></div>
+          <div class="client-logo"><img src="images/emirates-insurance.jpg" alt="Emirates Insurance" /></div>
+          <div class="client-logo"><img src="images/informa-markets.jpg" alt="Informa Markets" /></div>
+          <div class="client-logo"><img src="images/kcal.jpg" alt="Kcal" /></div>
+          <div class="client-logo"><img src="images/rts.jpg" alt="RTS" /></div>
+          <div class="client-logo"><img src="images/sat-real-estate.jpg" alt="SAT Real Estate" /></div>
+          <div class="client-logo"><img src="images/wanda-fi.jpg" alt="Wanda Fi" /></div>
+          <!-- Duplicated for seamless loop -->
+          <div class="client-logo" aria-hidden="true"><img src="images/acer.jpg" alt="" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="images/altayermotors.jpg" alt="" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="images/careem.jpg" alt="" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="images/chalhoub-group.jpg" alt="" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="images/dmg-events.jpg" alt="" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="images/emirates-insurance.jpg" alt="" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="images/informa-markets.jpg" alt="" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="images/kcal.jpg" alt="" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="images/rts.jpg" alt="" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="images/sat-real-estate.jpg" alt="" /></div>
+          <div class="client-logo" aria-hidden="true"><img src="images/wanda-fi.jpg" alt="" /></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURES ========== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header center" data-animate="fade-up">
+        <div class="section-label">What we do</div>
+        <h2>One platform. Every channel. <span class="highlight">Real results.</span></h2>
+        <p>Arm yourself with the tools to deliver personalized, intelligent experiences at scale.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card" data-animate="fade-up" data-delay="0">
+          <div class="feature-icon"><i class="fas fa-eye"></i></div>
+          <h3>Visualize</h3>
+          <p>Arm yourself with essential insights that allow you to continually optimize your customer journeys and achieve your business goals.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> Real-time analytics dashboard</li>
+            <li><i class="fas fa-check"></i> Journey mapping & heatmaps</li>
+            <li><i class="fas fa-check"></i> KPI performance tracking</li>
+          </ul>
+        </div>
+        <div class="feature-card featured" data-animate="fade-up" data-delay="150">
+          <div class="feature-icon"><i class="fas fa-pencil-ruler"></i></div>
+          <div class="featured-badge">Most Popular</div>
+          <h3>Create</h3>
+          <p>We work with you to identify and create personalized, seamless journeys that keep customers coming back.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> Drag-and-drop journey builder</li>
+            <li><i class="fas fa-check"></i> Multi-channel campaign design</li>
+            <li><i class="fas fa-check"></i> Audience segmentation tools</li>
+          </ul>
+        </div>
+        <div class="feature-card" data-animate="fade-up" data-delay="300">
+          <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+          <h3>Automate</h3>
+          <p>Using the latest AI, our platform automates complex processes helping you always engage customers in the best way across all channels.</p>
+          <ul class="feature-list">
+            <li><i class="fas fa-check"></i> AI-driven triggers & rules</li>
+            <li><i class="fas fa-check"></i> Automated A/B testing</li>
+            <li><i class="fas fa-check"></i> Intelligent escalation paths</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PRODUCTS ========== -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header center" data-animate="fade-up">
+        <div class="section-label">Our Products</div>
+        <h2>Everything you need to <span class="highlight">connect</span> with customers</h2>
+      </div>
+      <div class="products-grid">
+        <div class="product-card" data-animate="fade-up">
+          <div class="product-icon"><i class="fas fa-robot"></i></div>
+          <h4>AI Powered Chatbots</h4>
+          <p>Guarantee a personalized self-service experience no matter the channel, with efficient, cost-effective customer communications.</p>
+          <a href="webpages/products.html#powered-chatbots" class="product-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="product-card" data-animate="fade-up" data-delay="100">
+          <div class="product-icon"><i class="fas fa-database"></i></div>
+          <h4>Data Orchestration</h4>
+          <p>Seamlessly integrate and orchestrate data from all your existing systems and sources into one single platform.</p>
+          <a href="webpages/products.html#data-orchestration" class="product-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="product-card" data-animate="fade-up" data-delay="200">
+          <div class="product-icon"><i class="fas fa-comments"></i></div>
+          <h4>Cross Channel Messaging</h4>
+          <p>Deliver relevant and personalized communication, at the right time and on the right channel, in a seamless way.</p>
+          <a href="webpages/products.html#cross-channel-messaging" class="product-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="product-card" data-animate="fade-up" data-delay="300">
+          <div class="product-icon"><i class="fas fa-route"></i></div>
+          <h4>Customer Journey Tracker</h4>
+          <p>Take actions of impact by mapping, visualizing and optimizing customers' interactions in real time.</p>
+          <a href="webpages/products.html#customer-journey-tracker" class="product-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="product-card" data-animate="fade-up" data-delay="400">
+          <div class="product-icon"><i class="fas fa-phone-volume"></i></div>
+          <h4>Conversational IVR</h4>
+          <p>Exceed customers' expectations by predicting their intent with our AI-powered NLP Speech recognition solution.</p>
+          <a href="webpages/products.html#conversational-ivr" class="product-link">Learn more <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="product-card product-cta" data-animate="fade-up" data-delay="500">
+          <div class="product-icon"><i class="fas fa-sparkles"></i></div>
+          <h4>Ready to get started?</h4>
+          <p>Talk to our experts and discover which solution fits your business best.</p>
+          <a href="#contact" class="btn btn-primary">Book a Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== VIDEO / CTA BANNER ========== -->
+  <section class="video-banner" id="video">
+    <div class="video-overlay"></div>
+    <iframe
+      class="video-bg"
+      src="https://www.youtube.com/embed/Y3pUP_Ao_7g?autoplay=1&mute=1&loop=1&playlist=Y3pUP_Ao_7g&controls=0&rel=0&playsinline=1"
+      frameborder="0"
+      allow="autoplay; encrypted-media"
+      aria-hidden="true"
+      title="Background video"
+    ></iframe>
+    <div class="video-content" data-animate="fade-up">
+      <div class="section-label light">See the difference</div>
+      <h2>Need more convincing?</h2>
+      <p>
+        Take a look at how Phoenix Evolution will help you reach your customers
+        at the right time, on the right channel — in a seamless and personalized way.
+      </p>
+      <a href="https://www.youtube.com/watch?v=Y3pUP_Ao_7g" target="_blank" class="btn btn-white btn-lg">
+        <i class="fas fa-play-circle"></i> Watch the Video
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== SECTORS ========== -->
+  <section class="sectors" id="sectors">
+    <div class="container">
+      <div class="section-header center" data-animate="fade-up">
+        <div class="section-label">Industries we serve</div>
+        <h2>Here's how brands of all sizes are <span class="highlight">raising the bar</span> for customer engagement</h2>
+      </div>
+      <div class="sectors-grid">
+        <div class="sector-card" data-animate="fade-up">
+          <div class="sector-img banking">
+            <i class="fas fa-building-columns"></i>
+          </div>
+          <div class="sector-body">
+            <h4>Banking</h4>
+            <p>Deliver safe, secure and seamless experiences for your customers.</p>
+            <a href="webpages/sectors.html#banking" class="sector-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="sector-card" data-animate="fade-up" data-delay="100">
+          <div class="sector-img retail">
+            <i class="fas fa-store"></i>
+          </div>
+          <div class="sector-body">
+            <h4>Retail</h4>
+            <p>Deliver hyper-personalised communications to streamline from purchase to delivery.</p>
+            <a href="webpages/sectors.html#retail" class="sector-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="sector-card" data-animate="fade-up" data-delay="200">
+          <div class="sector-img logistics">
+            <i class="fas fa-truck-fast"></i>
+          </div>
+          <div class="sector-body">
+            <h4>Logistics</h4>
+            <p>Ensure parcels are delivered quickly and efficiently with smart notifications.</p>
+            <a href="webpages/sectors.html#logistics" class="sector-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="sector-card" data-animate="fade-up" data-delay="300">
+          <div class="sector-img healthcare">
+            <i class="fas fa-heart-pulse"></i>
+          </div>
+          <div class="sector-body">
+            <h4>Healthcare</h4>
+            <p>Emergency Management solution enables customers to get the right support, quickly.</p>
+            <a href="webpages/sectors.html#healthcare" class="sector-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+        <div class="sector-card" data-animate="fade-up" data-delay="400">
+          <div class="sector-img events">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <div class="sector-body">
+            <h4>Event Management</h4>
+            <p>Leverage unique customer data to deliver targeted communications at scale.</p>
+            <a href="webpages/sectors.html#event-management" class="sector-link">Explore <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT / DEMO ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper" data-animate="fade-up">
+        <div class="contact-info">
+          <div class="section-label">Get in touch</div>
+          <h2>Ready to transform your<br /><span class="highlight">customer experience?</span></h2>
+          <p>Talk to one of our experts and discover what Phoenix Evolution can do for your business.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-location-dot"></i>
+              <span>1207 Preatoni Tower, Jumeirah Lake Towers, Dubai UAE</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+97144452600">+97144452600</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:sales@phoenixevolution.ae">sales@phoenixevolution.ae</a>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-box">
+          <h3>Book a Free Demo</h3>
+          <form class="contact-form" id="demoForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Smith" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Work Email</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Your Company" />
+            </div>
+            <div class="form-group">
+              <label for="interest">I'm interested in</label>
+              <select id="interest" name="interest">
+                <option value="">Select a product</option>
+                <option>AI Powered Chatbots</option>
+                <option>Data Orchestration</option>
+                <option>Cross Channel Messaging</option>
+                <option>Customer Journey Tracker</option>
+                <option>Conversational IVR</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message (optional)</label>
+              <textarea id="message" name="message" rows="3" placeholder="Tell us about your needs..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <i class="fas fa-paper-plane"></i> Request a Demo
+            </button>
+            <p class="form-note"><i class="fas fa-lock"></i> Your data is safe. No spam, ever.</p>
+          </form>
+          <div class="form-success" id="formSuccess" style="display:none;">
+            <i class="fas fa-circle-check"></i>
+            <h4>Request received!</h4>
+            <p>Our team will reach out within 24 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo">
+            <img src="phoenixlogo.png" alt="Phoenix Evolution" class="logo-img" />
+          </a>
+          <p>Cross channel communication solutions powered by AI — helping brands engage customers at the right time, on the right channel.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h5>Products</h5>
+          <a href="webpages/products.html#powered-chatbots">AI Powered Chatbots</a>
+          <a href="webpages/products.html#data-orchestration">Data Orchestration</a>
+          <a href="webpages/products.html#cross-channel-messaging">Cross Channel Messaging</a>
+          <a href="webpages/products.html#customer-journey-tracker">Customer Journey Tracker</a>
+          <a href="webpages/products.html#conversational-ivr">Conversational IVR</a>
+        </div>
+        <div class="footer-col">
+          <h5>Sectors</h5>
+          <a href="webpages/sectors.html#banking">Banking</a>
+          <a href="webpages/sectors.html#retail">Retail</a>
+          <a href="webpages/sectors.html#logistics">Logistics</a>
+          <a href="webpages/sectors.html#healthcare">Healthcare</a>
+          <a href="webpages/sectors.html#event-management">Event Management</a>
+        </div>
+        <div class="footer-col">
+          <h5>Solutions</h5>
+          <a href="webpages/digital-marketing-services.html">Digital Marketing Services</a>
+          <a href="webpages/solutions.html#self-service">Online Self-Service</a>
+          <a href="webpages/solutions.html#fraud-management">Fraud Management</a>
+          <a href="webpages/solutions.html#consent-management">Consent Management</a>
+        </div>
+        <div class="footer-col">
+          <h5>Contact</h5>
+          <div class="footer-contact-quick">
+            <a href="tel:+97144452600"><i class="fas fa-phone"></i> +97144452600</a>
+            <a href="mailto:sales@phoenixevolution.ae"><i class="fas fa-envelope"></i> sales@phoenixevolution.ae</a>
+            <span><i class="fas fa-location-dot"></i> Preatoni Tower, JLT, Dubai UAE</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Phoenix Evolution. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
